@@ -1,2 +1,2 @@
 # GeoData-ReactJS-App
-ReactJS, Framer, GoogleTransition, RestCountriesAPI 
+ReactJS, Framer, GoogleTransition,Zustand, RestCountriesAPI 
