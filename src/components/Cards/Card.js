@@ -6,7 +6,6 @@ import { useCountryStore } from './Store';
 const Card = (props) => {
 	const id = props.id;
 	const countryStore = useCountryStore();
-	console.log(countryStore.inViewCountry);
 	return (
 		<>
 			<div

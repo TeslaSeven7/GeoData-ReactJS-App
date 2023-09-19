@@ -13,7 +13,9 @@ export const Country = (props) => {
 	useEffect(() => {
 		if (isInView) {
 			countryStore.setInViewCountry(id);
-			console.log(countryStore);
+		}
+		if (!isInView && countryStore.inViewCountry === id) {
+			countryStore.setInViewCountry(null);
 		}
 	}, [isInView, id]);
 
