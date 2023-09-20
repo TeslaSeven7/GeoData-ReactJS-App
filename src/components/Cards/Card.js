@@ -10,11 +10,13 @@ const Card = (props) => {
 		<>
 			<div
 				className={classNames(
-					'position-absolute h-100 w-100 rounded-5 w-100 ',
+					'position-absolute h-100 w-100 rounded-5 w-100 d-flex align-items-end justify-content-end flex-column p-4',
 					props.gradient,
 					countryStore.inViewCountry === id ? 'opacity-1' : 'opacity-0'
 				)}>
-				{props.children}
+				<button className='w-25 rounded-5 py-2 bg-black text-white border-0'>
+					Show
+				</button>
 			</div>
 		</>
 	);
