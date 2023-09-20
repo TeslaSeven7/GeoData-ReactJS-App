@@ -1,6 +1,6 @@
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import { Country } from './components/Country.js';
+import { Country } from './components/Country.jsx';
 import {
 	France,
 	England,
@@ -8,8 +8,10 @@ import {
 	China,
 	Swiss,
 	Ireland,
-} from './components/Cards/Card.js';
+} from './components/Cards/Card.jsx';
+
 function App() {
+	
 	const countries = [
 		{ id: 1, card: France, sub: 'FR', name: 'France' },
 		{ id: 2, card: England, sub: 'EN', name: 'England' },

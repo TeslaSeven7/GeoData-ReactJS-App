@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 import classNames from 'classnames';
-import { useCountryStore } from './Store';
+import { useCountryStore } from './Store.jsx';
 
 const Card = (props) => {
 	const id = props.id;
