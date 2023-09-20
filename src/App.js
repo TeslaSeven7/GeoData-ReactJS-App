@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import { Country } from './components/Country.js';
