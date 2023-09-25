@@ -26,6 +26,10 @@ code {
 }
 ul li {
   list-style: none;
+  cursor: pointer;
+}
+ul li:hover p{
+  color: #868686;
 }
 .content p {
   color: lightgray;
@@ -33,17 +37,30 @@ ul li {
 }
 
 .content{
-  padding-bottom: 8rem!important;
+  padding-bottom: 3rem!important;
 }
 .sticky-top{
   height: 100vh;
 }
 .ratio{
   background: #f1f4f5;
+  transform: scale(1.5);
 }
 .ratio .position-absolute{
   transition: all .3s ease;
+  
 }
+
+.country-flag{
+  position: absolute;
+	border-radius: 25px;
+	height: 100%;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+}
+
 .gradient-1{
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);

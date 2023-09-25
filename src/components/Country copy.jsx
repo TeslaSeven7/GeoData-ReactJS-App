@@ -21,7 +21,6 @@ export const Country = (props) => {
 
 	return (
 		<li
-			key={props.key}
 			ref={ref}
 			className={classNames(
 				'h1 content text-start fw-bold ' + props.id,
