@@ -19,7 +19,7 @@ code {
   height: 100vh;
 }
 .countries{
-  margin: 35rem 0;
+  margin: 15rem 0;
 }
 .text-active{
   color: black!important;
@@ -53,12 +53,12 @@ ul li:hover p{
 
 .country-flag{
   position: absolute;
-	border-radius: 25px;
-	height: 100%;
-	width: 100%;
-	right: 0;
-	bottom: 0;
-	object-fit: cover;
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
 }
 
 .gradient-1{
@@ -87,12 +87,30 @@ ul li:hover p{
 
 .gradient-6{
   background-color: #21D4FD;
-background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  
 }
 
 
 
-
-
-
+.cursor-pointer{
+  cursor: pointer;
+  border: 1px solid gray!important;
+  height: 30px!important;
+  width: 30px!important;
+}
+.cursor-normal{
+  height: 30px!important;
+  width: 30px!important;
+}
+ .bottom-25{
+  bottom:150px
+} 
+@media(max-width: 767px){
+  .ratio{
+    transform: scale(1);
+    position: absolute;
+    bottom: 0;
+  }
+  
+}

@@ -8,6 +8,7 @@ export const Country = (props) => {
 	const isInView = useInView(ref, { margin: '-50% 0px -50% 0px' });
 	const id = props.id;
 	const countryStore = useCountryStore();
+	const firstLetter = props.dataFirstLetter;
 
 	useEffect(() => {
 		if (isInView) {
@@ -17,6 +18,7 @@ export const Country = (props) => {
 			countryStore.setInViewCountry(null);
 		}
 	}, [isInView, id]);
+
 	const handleClick = () => {
 		ref.current?.scrollIntoView({
 			behavior: 'smooth',
@@ -29,6 +31,7 @@ export const Country = (props) => {
 		<li
 			onClick={handleClick}
 			ref={ref}
+			data-first-letter={firstLetter}
 			className={classNames(
 				'h1 content text-start fw-bold ' + props.id,
 				isInView ? 'text-active' : ''
@@ -40,3 +43,4 @@ export const Country = (props) => {
 		</li>
 	);
 };
+export default Country;

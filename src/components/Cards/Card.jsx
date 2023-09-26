@@ -8,14 +8,11 @@ export const Card = (props) => {
 	const [showModal, setShowModal] = useState(false);
 	const id = props.id;
 	const countryStore = useCountryStore();
-	console.log(showModal);
-
 	return (
 		<>
 			<div
 				className={classNames(
 					'position-absolute h-100 w-100 rounded-5 w-100 d-flex align-items-end justify-content-end flex-column p-4',
-					'gradient-' + props.id,
 					countryStore.inViewCountry === id ? 'opacity-1' : 'opacity-0'
 				)}>
 				<img
@@ -32,7 +29,7 @@ export const Card = (props) => {
 			{showModal &&
 				createPortal(
 					<ModalContent
-						country={props}
+						country={props.infos}
 						closeModal={() => setShowModal(!showModal)}
 					/>,
 					document.body
